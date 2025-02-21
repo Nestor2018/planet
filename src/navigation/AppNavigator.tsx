@@ -1,14 +1,18 @@
 import React, { memo } from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import HomeScreen from "../screens/HomeScreen";
+import MyTabs from "./TabsNavigator";
 
 const Stack = createNativeStackNavigator();
 
 const NavigationStack = memo(() => {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="List planets" component={HomeScreen} />
+      <Stack.Screen
+        name="index"
+        component={MyTabs}
+        options={{ headerShown: false }}
+      />
     </Stack.Navigator>
   );
 });
