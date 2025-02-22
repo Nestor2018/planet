@@ -1,10 +1,9 @@
 import React from "react";
-import { View, Text } from "react-native";
+
+import ListPlanets from "../components/listPlanets/ListPlanets";
 
 const HomeScreen = () => {
-  <View>
-    <Text>Home Screen</Text>
-  </View>;
+  return <ListPlanets />;
 };
 
 export default HomeScreen;
