@@ -9,9 +9,15 @@ interface Planet {
 }
 
 const useFavorites = () => {
+  /**
+   * State to store the list of favorite planets.
+   */
   const [favorites, setFavorites] = useState<Planet[]>([]);
 
   useEffect(() => {
+    /**
+     * Loads the list of favorite planets from AsyncStorage.
+     */
     const loadFavorites = async () => {
       const storedFavorites = await AsyncStorage.getItem(FAVORITES_KEY);
       if (storedFavorites) {
@@ -21,6 +27,13 @@ const useFavorites = () => {
     loadFavorites();
   }, [favorites]);
 
+  /**
+   * Toggles the favorite status of a planet.
+   * If the planet is already a favorite, it will be removed from the list.
+   * If the planet is not a favorite, it will be added to the list.
+   *
+   * @param {Planet} planet - The planet to toggle in the favorites list.
+   */
   const toggleFavorite = async (planet: Planet) => {
     const isFavorite = favorites.some(
       (favorite: Planet) => favorite.id === planet.id,

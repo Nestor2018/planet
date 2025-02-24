@@ -1,5 +1,14 @@
 import { useState, useEffect } from "react";
 
+/**
+ * Custom hook to fetch and manage planet details.
+ *
+ * @param {string} planetUrl - The URL to fetch planet details from.
+ * @returns {Object} An object containing the planet details, loading state, and error state.
+ * @returns {Object|null} return.planet - The fetched planet details or null if not yet fetched.
+ * @returns {boolean} return.loading - The loading state, true if the data is still being fetched.
+ * @returns {string|null} return.error - The error message if an error occurred, otherwise null.
+ */
 const usePlanetDetails = (planetUrl: string) => {
   const [planet, setPlanet] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -26,5 +35,7 @@ const usePlanetDetails = (planetUrl: string) => {
 
   return { planet, loading, error };
 };
+
+export default usePlanetDetails;
 
 export default usePlanetDetails;

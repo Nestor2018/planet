@@ -10,7 +10,7 @@ interface Props {
 
 const SortButtons: React.FC<Props> = ({ sortOrder, setSortOrder }) => {
   return (
-    <View style={styles.sortContainer}>
+    <View style={styles.sortContainer} testID="sort-buttons">
       {["asc", "desc"].map((order) => (
         <TouchableOpacity
           key={order}
@@ -18,6 +18,7 @@ const SortButtons: React.FC<Props> = ({ sortOrder, setSortOrder }) => {
             styles.sortButton,
             sortOrder === order && styles.activeButton,
           ]}
+          testID={`button-${order}`}
           onPress={() => setSortOrder(order as "asc" | "desc")}
         >
           <Ionicons

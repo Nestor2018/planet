@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SortButtons Component matches snapshot 1`] = `
+<View
+  style={
+    {
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "marginVertical": 10,
+    }
+  }
+  testID="sort-buttons"
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#3c6fc8",
+        "borderRadius": 8,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginHorizontal": 5,
+        "minWidth": 120,
+        "opacity": 1,
+        "padding": 10,
+      }
+    }
+    testID="button-asc"
+  >
+    <view
+      color="#20252c"
+      name="arrow-up"
+      size={18}
+      testID="icon-arrow-up"
+    />
+    <Text
+      style={
+        [
+          {
+            "color": "#fff",
+            "fontSize": 14,
+            "marginLeft": 5,
+          },
+          {
+            "color": "#20252c",
+          },
+        ]
+      }
+    >
+      Ascendente
+    </Text>
+  </View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#272c35",
+        "borderRadius": 8,
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginHorizontal": 5,
+        "minWidth": 120,
+        "opacity": 1,
+        "padding": 10,
+      }
+    }
+    testID="button-desc"
+  >
+    <view
+      color="#fff"
+      name="arrow-down"
+      size={18}
+      testID="icon-arrow-down"
+    />
+    <Text
+      style={
+        [
+          {
+            "color": "#fff",
+            "fontSize": 14,
+            "marginLeft": 5,
+          },
+          false,
+        ]
+      }
+    >
+      Descendente
+    </Text>
+  </View>
+</View>
+`;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { useRoute } from "@react-navigation/native";
 
@@ -17,9 +17,14 @@ const PlanetDetailsScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>{planet?.englishName}</Text>
-      <PlanetDetails planet={planet || {}} />
-      {loading && <Loader testID="loader" />}
+      {loading ? (
+        <Loader testID="loader" />
+      ) : (
+        <Fragment>
+          <Text style={styles.title}>{planet?.englishName}</Text>
+          <PlanetDetails planet={planet || {}} />
+        </Fragment>
+      )}
     </View>
   );
 };

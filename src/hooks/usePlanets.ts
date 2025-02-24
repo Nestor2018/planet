@@ -4,6 +4,11 @@ import { API_HOST } from "../utils/constants";
 
 const API_URL = API_HOST;
 
+/**
+ * Custom hook to fetch and manage planet data.
+ *
+ * @returns {Object} An object containing the planets data, loading state, and error state.
+ */
 const usePlanets = () => {
   const [planets, setPlanets] = useState([]);
   const [loading, setLoading] = useState(true);

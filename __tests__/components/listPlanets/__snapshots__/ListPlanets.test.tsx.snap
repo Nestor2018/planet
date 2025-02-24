@@ -1,0 +1,550 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListPlanets Component matches snapshot when loaded 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#20252c",
+      "flex": 1,
+      "padding": 10,
+    }
+  }
+>
+  <View
+    testID="planet-search"
+  >
+    <TextInput
+      accessibilityLabel="Search planet"
+      accessible={true}
+      onChangeText={[Function]}
+      placeholder="Search planet"
+      placeholderTextColor="white"
+      style={
+        [
+          {
+            "backgroundColor": "#a0a0a0",
+            "color": "#fff",
+            "height": 46,
+            "paddingLeft": 16,
+          },
+          {
+            "borderRadius": 8,
+            "margin": 8,
+          },
+        ]
+      }
+      testID="input"
+      value=""
+    />
+  </View>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginVertical": 10,
+      }
+    }
+    testID="sort-buttons"
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "#3c6fc8",
+          "borderRadius": 8,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "marginHorizontal": 5,
+          "minWidth": 120,
+          "opacity": 1,
+          "padding": 10,
+        }
+      }
+      testID="button-asc"
+    >
+      <view
+        color="#20252c"
+        name="arrow-up"
+        size={18}
+        testID="icon-arrow-up"
+      />
+      <Text
+        style={
+          [
+            {
+              "color": "#fff",
+              "fontSize": 14,
+              "marginLeft": 5,
+            },
+            {
+              "color": "#20252c",
+            },
+          ]
+        }
+      >
+        Ascendente
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "#272c35",
+          "borderRadius": 8,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "marginHorizontal": 5,
+          "minWidth": 120,
+          "opacity": 1,
+          "padding": 10,
+        }
+      }
+      testID="button-desc"
+    >
+      <view
+        color="#fff"
+        name="arrow-down"
+        size={18}
+        testID="icon-arrow-down"
+      />
+      <Text
+        style={
+          [
+            {
+              "color": "#fff",
+              "fontSize": 14,
+              "marginLeft": 5,
+            },
+            false,
+          ]
+        }
+      >
+        Descendente
+      </Text>
+    </View>
+  </View>
+  <RCTScrollView
+    ListEmptyComponent={
+      <Text
+        style={
+          {
+            "color": "#fff",
+            "fontSize": 16,
+            "marginTop": 16,
+          }
+        }
+      >
+        No planets available.
+      </Text>
+    }
+    data={
+      [
+        {
+          "englishName": "Earth",
+          "id": "earth",
+        },
+        {
+          "englishName": "Jupiter",
+          "id": "jupiter",
+        },
+        {
+          "englishName": "Mars",
+          "id": "mars",
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={0.0001}
+    stickyHeaderIndices={[]}
+    testID="planet-list"
+    viewabilityConfigCallbackPairs={[]}
+  >
+    <View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#272c35",
+                "borderRadius": 8,
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "marginVertical": 5,
+                "padding": 10,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#fff",
+                  "fontSize": 16,
+                }
+              }
+            >
+              Earth
+            </Text>
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "opacity": 1,
+                }
+              }
+            >
+              <view
+                color="#fff"
+                name="heart-outline"
+                size={24}
+                testID="icon-heart-outline"
+              />
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#272c35",
+                "borderRadius": 8,
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "marginVertical": 5,
+                "padding": 10,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#fff",
+                  "fontSize": 16,
+                }
+              }
+            >
+              Jupiter
+            </Text>
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "opacity": 1,
+                }
+              }
+            >
+              <view
+                color="#fff"
+                name="heart-outline"
+                size={24}
+                testID="icon-heart-outline"
+              />
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#272c35",
+                "borderRadius": 8,
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "marginVertical": 5,
+                "padding": 10,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#fff",
+                  "fontSize": 16,
+                }
+              }
+            >
+              Mars
+            </Text>
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "opacity": 1,
+                }
+              }
+            >
+              <view
+                color="#fff"
+                name="heart-outline"
+                size={24}
+                testID="icon-heart-outline"
+              />
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

@@ -18,6 +18,7 @@ const Planet: React.FC<Props> = ({ planet, isFavorite }) => {
       <Text style={styles.text}>{planet.englishName}</Text>
       <TouchableOpacity onPress={() => toggleFavorite(planet)}>
         <Ionicons
+          testID={isFavorite ? "icon-heart" : "icon-heart-outline"}
           name={isFavorite ? "heart" : "heart-outline"}
           size={24}
           color={isFavorite ? colors.picton : colors.white}

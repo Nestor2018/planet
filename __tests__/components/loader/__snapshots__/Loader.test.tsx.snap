@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loader Component matches snapshot 1`] = `
+<ActivityIndicator
+  accessibilityLabel="Loading..."
+  color="white"
+  size="large"
+  style={
+    [
+      {
+        "margin": 20,
+      },
+      undefined,
+    ]
+  }
+  testID="loader"
+/>
+`;

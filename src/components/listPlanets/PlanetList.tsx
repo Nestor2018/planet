@@ -15,6 +15,7 @@ const PlanetList: React.FC<PlanetProps> = ({ planets }) => {
 
   return (
     <FlatList
+      testID="planet-list"
       data={planets}
       keyExtractor={(item) => item.id}
       renderItem={({ item }) => (
@@ -24,6 +25,7 @@ const PlanetList: React.FC<PlanetProps> = ({ planets }) => {
           }
         >
           <Planet
+            testID={`planet-${item.englishName}`}
             planet={item}
             isFavorite={favorites.some(
               (favorite: { id: string }) => favorite.id === item.id,

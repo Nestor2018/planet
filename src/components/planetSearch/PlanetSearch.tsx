@@ -21,7 +21,7 @@ const PlanetSearch: React.FC<PlanetSearchProps> = memo(({ onChange }) => {
   );
 
   return (
-    <View testID="planetSearch">
+    <View testID="planet-search">
       <TextInput
         testID="input"
         style={[
