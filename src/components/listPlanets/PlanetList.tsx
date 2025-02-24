@@ -1,8 +1,9 @@
 import React from "react";
-import { FlatList, TouchableOpacity } from "react-native";
+import { FlatList, TouchableOpacity, Text, StyleSheet } from "react-native";
 import { StackNavigationProp } from "@react-navigation/stack";
 
 import useFavorites from "../../hooks/useFavorites";
+import colors from "../../utils/colors";
 import { useNavigation } from "@react-navigation/native";
 import Planet from "./Planet";
 import { RootStackParamList } from "../../navigation/AppNavigator";
@@ -30,8 +31,19 @@ const PlanetList: React.FC<PlanetProps> = ({ planets }) => {
           />
         </TouchableOpacity>
       )}
+      ListEmptyComponent={
+        <Text style={styles.text}>No planets available.</Text>
+      }
     />
   );
 };
+
+const styles = StyleSheet.create({
+  text: {
+    color: colors.white,
+    fontSize: 16,
+    marginTop: 16,
+  },
+});
 
 export default PlanetList;
